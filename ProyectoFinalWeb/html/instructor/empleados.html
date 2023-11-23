@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/crudempleado.js"></script>
+    <script src="../js/empleado.js"></script>
+</head>
+<body>
+    
+    <h1> Gestion De Empleados</h1>
+
+    Cedula <input id="cedula" type="text" onfocusout="consultar()"> <br>
+    Nombres <input id="nombres" type="text"> <br>
+    Apellidos <input id="apellidos" type="text"> <br>
+
+    <button onclick="insertar()">Insertar</button> <br>
+    <button onclick="modificar()" >Modificar</button> <br>
+    <button onclick="eliminar()">Eliminar</button> <br>
+    <button onclick="consultar()">Consultar</button> <br>
+
+</body>
+</html>

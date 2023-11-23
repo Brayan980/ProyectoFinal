@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <script src="../../js/crudusuario.js"></script>
+    <script src="../../js/usuario.js"></script>
+    <script src="../../../EjemploCreacionNodo/js/ejemplo.js"></script>
+    <script src="../../../EjemploCreacionNodo/js/utilidades.js"></script>
+    <style>
+       body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        #seccion_carta {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .carta {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 400px;
+        }
+
+        .carta img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .enlace_carta {
+            display: block;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .enlace_carta:hover {
+            background-color: #2980b9;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        select, button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido, Estudiante</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="tematicas.html">Tematicas</a></li>
+          
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="../iniciarsesion.html">Cerrar Sesión</a></li>
+            <!-- Agrega más enlaces según las funciones específicas de tu sistema -->
+        </ul>
+    </nav>
+  
+    <section>
+        <h1>Cursos disponibles</h1>
+
+        <div class="container">
+            <select id="cursos">
+                <option value="Introducción a la Programación">Introducción a la Programación</option>
+                <option value="Desarrollo Web Avanzado">Desarrollo Web Avanzado</option>
+                <option value="Algoritmos y Estructuras de Datos">Algoritmos y Estructuras de Datos</option>
+            </select>
+
+            <button onclick="adicionarCurso()">Adicionar curso</button>
+        </div>
+
+        <h2>Cursos Agregados</h2>
+    
+        <ul id="cursosAgregados"></ul>
+    </section>
+   
+    <footer>
+        <p>Pie de página o información adicional</p>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administrador</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .chart-container {
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .bar {
+            display: inline-block;
+            width: 30px;
+            margin: 5px;
+            background-color: #3498db;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Reportes financieros, Administrador</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="gestion_temas.html">Gestión de Temas</a></li>
+            <li><a href="gestion_cursos.html">Gestión de Cursos</a></li>
+            <li><a href="gestion_usuarios.html">Gestión de Usuarios</a></li>
+            <li><a href="reportes_financieros.html">Reportes Financieros</a></li>
+            <li><a href="sistema_evaluacion.html">Sistema de Evaluación</a></li>
+            <li><a href="../iniciarsesion.html">Cerrar Sesión</a></li>
+            <!-- Agrega más enlaces según las funciones específicas de tu sistema -->
+        </ul>
+    </nav>
+
+    <section id="contenido_principal">
+        <h2>Plata Ganada Hacia Profesores</h2>
+        <p>Este gráfico representa la cantidad de dinero ganado por los profesores en el último mes.</p>
+        <div class="chart-container">
+            <!-- Gráfico de barras -->
+            <div class="bar" style="height: 150px;"></div>
+            <div class="bar" style="height: 100px;"></div>
+            <div class="bar" style="height: 120px;"></div>
+            <div class="bar" style="height: 80px;"></div>
+            <!-- Agrega más barras según tus datos -->
+        </div>
+
+        <!-- Información extra -->
+        <div>
+            <p>Este gráfico muestra la distribución del ingreso hacia profesores en el último mes. Cada barra representa a un profesor y su respectivo ingreso.</p>
+        </div>
+
+        <!-- Gráficas adicionales -->
+        <div class="chart-container">
+            <h2>Otras Métricas Financieras</h2>
+            <div class="bar" style="height: 90px;"></div>
+            <div class="bar" style="height: 120px;"></div>
+            <div class="bar" style="height: 80px;"></div>
+            <div class="bar" style="height: 110px;"></div>
+            <!-- Agrega más barras según tus datos -->
+        </div>
+        <div class="chart-container">
+            <h2>Otras Métricas Financieras</h2>
+            <div class="bar" style="height: 90px;"></div>
+            <div class="bar" style="height: 120px;"></div>
+            <div class="bar" style="height: 80px;"></div>
+            <div class="bar" style="height: 110px;"></div>
+            <!-- Agrega más barras según tus datos -->
+        </div>
+        <div class="chart-container">
+            <h2>Otras Métricas Financieras</h2>
+            <div class="bar" style="height: 90px;"></div>
+            <div class="bar" style="height: 120px;"></div>
+            <div class="bar" style="height: 80px;"></div>
+            <div class="bar" style="height: 110px;"></div>
+            <!-- Agrega más barras según tus datos -->
+        </div>
+        <!-- Información extra -->
+        <div>
+            <p>Aquí puedes encontrar otras métricas financieras relevantes para la administración del sistema. Cada barra representa una métrica específica.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Pie de página o información adicional</p>
+    </footer>
+
+</body>
+</html>
+

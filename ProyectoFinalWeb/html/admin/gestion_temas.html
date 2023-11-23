@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administrador</title>
+    <script src="../../js/gestion_tema.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .seccion {
+            margin-bottom: 20px;
+        }
+
+        .boton {
+            padding: 10px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        #resultado {
+            margin-top: 20px;
+        }
+    </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .formulario {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        input, textarea, select {
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+      
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gestión de Temas, Administrador</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="gestion_temas.html">Gestión de Temas</a></li>
+            <li><a href="gestion_cursos.html">Gestión de Cursos</a></li>
+            <li><a href="gestion_usuarios.html">Gestión de Usuarios</a></li>
+            <li><a href="reportes_financieros.html">Reportes Financieros</a></li>
+            <li><a href="sistema_evaluacion.html">Sistema de Evaluación</a></li>
+            <li><a href="../iniciarsesion.html">Cerrar Sesión</a></li>
+            <!-- Agrega más enlaces según las funciones específicas de tu sistema -->
+        </ul>
+    </nav>
+
+    <section id="crear_tema">
+        <h2>Crear Tema</h2>
+        <div class="formulario">
+            <!-- Aquí va el formulario de creación de temas -->
+            <form>
+                <label for="codigo">Código:</label>
+                <input type="text" id="codigo" name="codigo" required>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+
+                <label for="cursos">Cursos Asociados:</label>
+                <input type="text" id="cursos" name="cursos" required>
+
+                <label for="costo">Costo:</label>
+                <input type="number" id="costo" name="costo" required>
+
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio" required>
+
+                <button type="button">Guardar Tematica</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="editar_tema">
+        <h2>Editar Tema</h2>
+        <div class="formulario">
+            <!-- Aquí va el formulario de edición de temas -->
+            <form>
+                <label for="codigo">Código:</label>
+                <input type="text" id="codigo" name="codigo" required>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+
+                <label for="cursos">Cursos Asociados:</label>
+                <input type="text" id="cursos" name="cursos" required>
+
+                <label for="costo">Costo:</label>
+                <input type="number" id="costo" name="costo" required>
+
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio" required>
+
+                <button type="button">Editar Tematica</button>
+
+            </form>
+        </div>
+    </section>
+
+    <section id="eliminar_tema">
+        <h2>Eliminar Tema</h2>
+        <div class="formulario">
+            <!-- Aquí va el formulario de eliminación de temas -->
+            <form>
+               <label for="codigo">Código:</label>
+               <input type="text" id="codigo" name="codigo" required>
+
+               <button type="button">Eliminar Tematica</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="consultar_temas">
+        <h2>Consultar Temas</h2>
+        <ul>
+           
+        </ul>
+    </section>
+
+ 
+    
+
+
+<footer>
+    <p>Pie de página o información adicional</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <script src="../../js/crudusuario.js"></script>
+    <script src="../../js/usuario.js"></script>
+    <style>
+        body {
+             font-family: Arial, sans-serif;
+             margin: 0;
+             padding: 0;
+             background-color: #f4f4f4;
+         }
+ 
+         header {
+             background-color: #333;
+             color: #fff;
+             padding: 10px;
+             text-align: center;
+         }
+ 
+         nav {
+             background-color: #444;
+             color: #fff;
+             padding: 10px;
+             text-align: center;
+         }
+ 
+         nav ul {
+             list-style-type: none;
+             margin: 0;
+             padding: 0;
+         }
+ 
+         nav li {
+             display: inline-block;
+             margin-right: 20px;
+         }
+ 
+         nav a {
+             color: #fff;
+             text-decoration: none;
+             font-weight: bold;
+         }
+ 
+         section {
+             padding: 20px;
+         }
+ 
+         footer {
+             background-color: #333;
+             color: #fff;
+             text-align: center;
+             padding: 10px;
+             position: fixed;
+             bottom: 0;
+             width: 100%;
+         }
+         
+         #seccion_carta {
+             padding: 20px;
+             text-align: center;
+         }
+ 
+         .carta {
+             border: 1px solid #ccc;
+             border-radius: 10px;
+             overflow: hidden;
+             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+             margin-bottom: 20px;
+             width: 400px;
+         }
+ 
+         .carta img {
+             width: 400px;
+             height: auto;
+         }
+ 
+         .enlace_carta {
+             display: block;
+             background-color: #3498db;
+             color: #fff;
+             text-decoration: none;
+             padding: 10px;
+             font-weight: bold;
+             font-size: 16px;
+         }
+         .container {
+ display: grid;
+ grid-template-columns: auto auto;
+         }
+     </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido, Estudiante</h1>
+    </header>
+    
+
+    <nav>
+        <ul>
+            <li><a href="tematicas.html">Tematicas</a></li>
+          
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="../iniciarsesion.html">Cerrar Sesión</a></li>
+            <!-- Agrega más enlaces según las funciones específicas de tu sistema -->
+        </ul>
+    </nav>
+    <div class="container">
+
+        <div style="margin-left: 80px;">
+       
+    
+        <section id="seccion_carta">
+            <div class="carta">
+                <img src="../../recursos/imagenes/Introducción a la Programación.png" alt="Foto de Ciencias de la Computación" >
+                <a href="programacion.html" class="enlace_carta">Introducción a la Programación</a>
+            </div>
+        </section>
+    </div>
+    <div>
+        <section id="seccion_carta">
+            <div class="carta">
+                <img src="../../recursos/imagenes/diseñoweb.png" alt="Foto de Ciencias de la Computación" >
+                <a href="programacion.html" class="enlace_carta">Desarrollo Web Avanzado</a>
+            </div>
+        </section>
+    </div>
+    </div>
+
+
+
+    <br><br><br><br><br>
+    <section id="contenido_principal">
+        <!-- Aquí podrías mostrar información relevante, resúmenes o estadísticas -->
+    </section>
+
+    <footer>
+        <p>Pie de página o información adicional</p>
+    </footer>
+
+</body>
+</html>

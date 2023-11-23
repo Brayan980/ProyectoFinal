@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../js/crudusuario.js"></script>
+    <script src="../../js/usuario.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box; 
+    margin-left: 455px;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 8px;
+    color: #555;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Gestion Usuarios, Administrador</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="gestion_temas.html">Gestión de Temas</a></li>
+            <li><a href="gestion_cursos.html">Gestión de Cursos</a></li>
+            <li><a href="gestion_usuarios.html">Gestión de Usuarios</a></li>
+            <li><a href="reportes_financieros.html">Reportes Financieros</a></li>
+            <li><a href="sistema_evaluacion.html">Sistema de Evaluación</a></li>
+            <li><a href="../iniciarsesion.html">Cerrar Sesión</a></li>
+            
+        </ul>
+    </nav>
+
+    <br>
+    <br>
+    
+    <br>
+    <div class="container">
+        
+        <h2 style="margin-left: 20px;">Agregar Usuarios</h2>
+        <form onsubmit="insertar(); return false;">
+            <!-- Campos para iniciar sesión -->
+            <label for="usuario">Usuario</label>
+            <input id="usuario" type="text">
+
+            <label for="password">Password</label>
+            <input id="password" type="password">
+
+            <!-- Campos adicionales -->
+            <label for="nombres">Nombres</label>
+            <input id="nombres" type="text">
+
+            <label for="apellidos">Apellidos</label>
+            <input id="apellidos" type="text">
+
+            <label for="tipoIdentificacion">Tipo de Identificación</label>
+            <select id="tipoIdentificacion">
+                <option value="CC">CC</option>
+                <option value="TI">TI</option>
+                <option value="CE">CE</option>
+                <option value="P">P</option>
+            </select>
+
+            <label for="numeroIdentificacion">Número de Identificación</label>
+            <input id="numeroIdentificacion" type="text">
+
+            <label for="direccion">Dirección de Residencia</label>
+            <input id="direccion" type="text">
+
+            <label for="fechaNacimiento">Fecha de Nacimiento</label>
+            <input id="fechaNacimiento" type="date">
+
+            <label for="estudiosRealizados">Estudios Realizados</label>
+            <input id="estudiosRealizados" type="text">
+
+            <label for="tipo">Tipo</label>
+            <select id="tipo">
+                <option value="admin">Administrador</option>
+                <option value="instructor">Instructor</option>
+                <option value="estudiante">Estudiante</option>
+            </select>
+
+            <label for="correoElectronico">Correo Electrónico</label>
+            <input id="correoElectronico" type="email">
+
+            <!-- Botón para guardar -->
+            <button type="submit">Guardar</button>
+          
+        </form>
+    </div>
+
+<br>
+<br>
+
+<br>
+<div class="container">
+        
+    <h2 style="margin-left: 20px;">Editar Usuarios</h2>
+    <form>
+        <!-- Campos para iniciar sesión -->
+        <label for="usuario">Usuario</label>
+        <input id="usuario" type="text">
+
+        <label for="password">Password</label>
+        <input id="password" type="password">
+
+        <!-- Campos adicionales -->
+        <label for="nombres">Nombres</label>
+        <input id="nombres" type="text">
+
+        <label for="apellidos">Apellidos</label>
+        <input id="apellidos" type="text">
+
+        <label for="tipoIdentificacion">Tipo de Identificación</label>
+        <select id="tipoIdentificacion">
+            <option value="CC">CC</option>
+            <option value="TI">TI</option>
+            <option value="CE">CE</option>
+            <option value="P">P</option>
+        </select>
+
+        <label for="numeroIdentificacion">Número de Identificación</label>
+        <input id="numeroIdentificacion" type="text">
+
+        <label for="direccion">Dirección de Residencia</label>
+        <input id="direccion" type="text">
+
+        <label for="fechaNacimiento">Fecha de Nacimiento</label>
+        <input id="fechaNacimiento" type="date">
+
+        <label for="estudiosRealizados">Estudios Realizados</label>
+        <input id="estudiosRealizados" type="text">
+
+        <label for="tipo">Tipo</label>
+        <select id="tipo">
+            <option value="admin">Administrador</option>
+            <option value="instructor">Instructor</option>
+            <option value="estudiante">Estudiante</option>
+        </select>
+
+        <label for="correoElectronico">Correo Electrónico</label>
+        <input id="correoElectronico" type="email">
+
+        <!-- Botón para Editar -->
+        <button type="button" onclick="modificar()">Editar</button>
+
+      
+    </form>
+</div>
+<br>
+<br>
+<br>
+<div class="container">
+        
+    <h2 style="margin-left: 20px;">Eliminar Usuarios</h2>
+    <form onsubmit="eliminar(); return false;">
+        <!-- Campos para iniciar sesión -->
+        <label for="usuario">Usuario</label>
+        <input id="usuario" type="text">
+
+
+        <label for="numeroIdentificacion">Número de Identificación</label>
+        <input id="numeroIdentificacion" type="text">
+
+        
+
+        <label for="tipo">Tipo</label>
+        <select id="tipo">
+            <option value="admin">Administrador</option>
+            <option value="instructor">Instructor</option>
+            <option value="estudiante">Estudiante</option>
+        </select>
+
+       
+        <!-- Botón para guardar -->
+        <button type="submit">Guardar</button>
+      
+    </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+    <footer>
+        <p>Pie de página o información adicional</p>
+    </footer>
+
+</body>
+</html>
